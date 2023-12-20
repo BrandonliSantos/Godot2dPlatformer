@@ -511,8 +511,13 @@ scale = Vector2(3, 3)
 
 [node name="Camera2D" type="Camera2D" parent="Scene Objects/CharacterBody2D"]
 scale = Vector2(0.333333, 0.333333)
+limit_left = -50
+limit_top = -48
+limit_right = 2590
+limit_bottom = 720
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
+editor_draw_limits = true
 
 [node name="Collectables" type="Node" parent="Scene Objects"]
 
