@@ -1,7 +1,32 @@
-[gd_scene load_steps=22 format=3 uid="uid://bjb6lwl7thouk"]
+[gd_scene load_steps=29 format=3 uid="uid://bjb6lwl7thouk"]
 
 [ext_resource type="Script" path="res://scenes/collectable.gd" id="1_55n05"]
+[ext_resource type="Texture2D" uid="uid://cltjnlk8eu50w" path="res://sprites/Collected.png" id="2_brmyb"]
 [ext_resource type="Texture2D" uid="uid://dfumk27ixoyhx" path="res://sprites/Cherries.png" id="2_ol4pr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oe13h"]
+atlas = ExtResource("2_brmyb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fv2aj"]
+atlas = ExtResource("2_brmyb")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gmji"]
+atlas = ExtResource("2_brmyb")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jd5g1"]
+atlas = ExtResource("2_brmyb")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv70s"]
+atlas = ExtResource("2_brmyb")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86cif"]
+atlas = ExtResource("2_brmyb")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fyps2"]
 atlas = ExtResource("2_ol4pr")
@@ -75,6 +100,29 @@ region = Rect2(512, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_oe13h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fv2aj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gmji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jd5g1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xv70s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86cif")
+}],
+"loop": true,
+"name": &"collected",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_fyps2")
 }, {
 "duration": 1.0,
@@ -140,11 +188,13 @@ script = ExtResource("1_55n05")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_im5pu")
+animation = &"collected"
 autoplay = "default"
-frame = 14
-frame_progress = 0.772685
+frame = 5
+frame_progress = 0.893307
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_q1nft")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
