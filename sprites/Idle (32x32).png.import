@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://covfspkh0ai14"
-path="res://.godot/imported/Terrain (16x16).png-f072e8a5f99e915c05031c83401c87a9.ctex"
+uid="uid://daudkdwthfsvf"
+path="res://.godot/imported/Idle (32x32).png-08047bf15f28113cbb208a80012f5c56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Terrain (16x16).png"
-dest_files=["res://.godot/imported/Terrain (16x16).png-f072e8a5f99e915c05031c83401c87a9.ctex"]
+source_file="res://sprites/Idle (32x32).png"
+dest_files=["res://.godot/imported/Idle (32x32).png-08047bf15f28113cbb208a80012f5c56.ctex"]
 
 [params]
 

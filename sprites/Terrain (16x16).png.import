@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfumk27ixoyhx"
-path="res://.godot/imported/Cherries.png-e71be6149781b6379cb0a20bba7415c5.ctex"
+uid="uid://covfspkh0ai14"
+path="res://.godot/imported/Terrain (16x16).png-1869dc88d20c6258a5499607a1b49825.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cherries.png"
-dest_files=["res://.godot/imported/Cherries.png-e71be6149781b6379cb0a20bba7415c5.ctex"]
+source_file="res://sprites/Terrain (16x16).png"
+dest_files=["res://.godot/imported/Terrain (16x16).png-1869dc88d20c6258a5499607a1b49825.ctex"]
 
 [params]
 
