@@ -1,5 +1,5 @@
 extends Node
-@onready var points_label = %PointsLabel
+@onready var points_label = get_node("/root/UiPoints/Panel/PointsLabel")
 var points = 0
 
 func add_point():

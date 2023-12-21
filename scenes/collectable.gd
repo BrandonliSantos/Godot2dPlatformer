@@ -1,7 +1,8 @@
 extends Area2D
 @onready var sprite_2d = $AnimatedSprite2D
-@onready var game_manager = %GameManager
+@onready var game_manager = get_node("/root/GameManager")
 var collected = false
+
 
 func _on_body_entered(body):
 	if body.name == "CharacterBody2D" and not collected:

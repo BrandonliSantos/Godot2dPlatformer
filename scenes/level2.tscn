@@ -1,6 +1,5 @@
-[gd_scene load_steps=9 format=3 uid="uid://c0nujmwju52g1"]
+[gd_scene load_steps=8 format=3 uid="uid://c0nujmwju52g1"]
 
-[ext_resource type="Script" path="res://game_manager.gd" id="1_ko2cj"]
 [ext_resource type="Texture2D" uid="uid://c8c58yd8acsd" path="res://sprites/Green.png" id="2_qwbyx"]
 [ext_resource type="Texture2D" uid="uid://covfspkh0ai14" path="res://sprites/Terrain (16x16).png" id="3_xwgti"]
 [ext_resource type="PackedScene" uid="uid://df43rvgxq2f5f" path="res://scenes/main_character.tscn" id="4_4riqb"]
@@ -507,10 +506,6 @@ sources/0 = SubResource("TileSetAtlasSource_6c2si")
 
 [node name="Node" type="Node"]
 
-[node name="GameManager" type="Node" parent="."]
-unique_name_in_owner = true
-script = ExtResource("1_ko2cj")
-
 [node name="Scene Objects" type="Node" parent="."]
 
 [node name="Background" type="TextureRect" parent="Scene Objects"]
@@ -581,24 +576,3 @@ position = Vector2(2033, 314)
 
 [node name="EndLevel" parent="Scene Objects" instance=ExtResource("5_45ol6")]
 position = Vector2(2370, 528)
-
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="Panel" type="Panel" parent="UI"]
-offset_left = 14.0
-offset_top = 16.0
-offset_right = 144.0
-offset_bottom = 75.0
-
-[node name="PointsLabel" type="Label" parent="UI/Panel"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 20
-text = "Points: 0"
-horizontal_alignment = 1
-vertical_alignment = 1
